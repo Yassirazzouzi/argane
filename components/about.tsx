@@ -6,7 +6,7 @@ export default function About() {
           {/* 🎥 Vidéo de présentation */}
           <div className="relative h-96 md:h-full rounded-lg overflow-hidden shadow-xl">
             <video
-              src="/agadir1.mp4"  // 👉 Mets ici le chemin de ta vidéo (ex: /videos/argan.mp4)
+              src="/agadir1.mp4" 
               autoPlay
               loop
               muted

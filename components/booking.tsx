@@ -150,16 +150,30 @@ export default function Booking() {
               </form>
 
               <div className="mt-8 pt-8 border-t border-border space-y-4">
-                <p className="text-sm text-muted-foreground">Préférez un contact direct ?</p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="outline" className="flex-1 bg-transparent">
-                    📞 Appeler: +212 0 00 00 00 00
-                  </Button>
-                  <Button variant="outline" className="flex-1 bg-transparent">
-                    💬 WhatsApp
-                  </Button>
-                </div>
-              </div>
+  <p className="text-sm text-muted-foreground">Préférez un contact direct ?</p>
+  <div className="flex flex-col sm:flex-row gap-4">
+    
+    {/* Bouton Appeler */}
+    <a href="tel:+212668325820" className="flex-1">
+      <Button variant="outline" className="w-full bg-transparent">
+        📞 Appeler : +212 6 68 32 58 20
+      </Button>
+    </a>
+
+    {/* Bouton WhatsApp */}
+    <a
+      href="https://wa.me/212668325820?text=Bonjour%2C%20je%20souhaite%20prendre%20un%20rendez-vous"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex-1"
+    >
+      <Button variant="outline" className="w-full bg-transparent">
+        💬 WhatsApp
+      </Button>
+    </a>
+  </div>
+</div>
+
             </>
           ) : (
             <>

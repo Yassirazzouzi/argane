@@ -20,10 +20,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 md:h-16">
           <div className="flex items-center">
-            <h1 className="font-serif text-lg md:text-2xl font-bold text-primary">Argan Palace</h1>
+            <h1 className="font-serif text-lg md:text-2xl font-bold text-primary">NaturaGlow</h1>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Navigation Desktop */}
           <nav className="hidden md:flex gap-8">
             {navItems.map((item) => (
               <a
@@ -36,15 +36,26 @@ export default function Header() {
             ))}
           </nav>
 
+          {/* Boutons Desktop */}
           <div className="hidden md:flex gap-4">
-            <Button variant="outline" size="sm">
-              Appeler
-            </Button>
-            <Button size="sm" className="bg-primary hover:bg-primary/90">
-              Réserver
-            </Button>
+            <a href="tel:+212668325820">
+              <Button variant="outline" size="sm" className="bg-transparent">
+                Appeler
+              </Button>
+            </a>
+
+            <a
+              href="https://wa.me/212668325820?text=Bonjour%2C%20je%20souhaite%20prendre%20un%20rendez-vous"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="sm" className="bg-transparent">
+                WhatsApp
+              </Button>
+            </a>
           </div>
 
+          {/* Menu Mobile */}
           <button
             className="md:hidden text-2xl p-2 hover:bg-muted rounded-lg transition-colors"
             onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +64,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Navigation Mobile */}
         {isOpen && (
           <nav className="md:hidden pb-4 space-y-2">
             {navItems.map((item) => (
@@ -66,14 +77,23 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <div className="px-4 pt-2 space-y-2">
+
+            <a href="tel:+212668325820" className="w-full block">
               <Button variant="outline" size="sm" className="w-full bg-transparent">
                 Appeler
               </Button>
-              <Button size="sm" className="w-full bg-primary hover:bg-primary/90">
-                Réserver
+            </a>
+
+            <a
+              href="https://wa.me/212668325820?text=Bonjour%2C%20je%20souhaite%20prendre%20un%20rendez-vous"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full block"
+            >
+              <Button variant="outline" size="sm" className="w-full bg-transparent">
+                WhatsApp
               </Button>
-            </div>
+            </a>
           </nav>
         )}
       </div>

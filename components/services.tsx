@@ -8,33 +8,39 @@ const services = [
   {
     category: "Massages",
     items: [
-      { name: "Massage Relaxant", duration: "60 min", price: "80€" },
-      { name: "Massage Thérapeutique", duration: "90 min", price: "120€" },
-      { name: "Massage Argan Complet", duration: "120 min", price: "160€" },
+      { name: "Massage Relaxant Berbère", duration: "60 min", price: "250DH" },
+      { name: "Massage Thérapeutique Tonique", duration: "60 min", price: "300DH" },
+      { name: "Massage lymphatique", duration: "60 min", price: "300DH" },
+      { name: "Réflexologie plantaire", duration: "45 min", price: "300DH" },
+      { name: "Massage Amincissant", duration: "75 min", price: "350DH" },
     ],
   },
   {
     category: "Hammam",
     items: [
-      { name: "Hammam Traditionnel", duration: "45 min", price: "50€" },
-      { name: "Hammam + Gommage", duration: "75 min", price: "85€" },
-      { name: "Hammam Rituel Complet", duration: "120 min", price: "140€" },
+      { name: "Hammam collectif Traditionnel", duration: "60 min", price: "200DH" },
+      { name: "Hammam collectif Senteur", duration: "60 min", price: "250DH" },
+      { name: "Formule Hammam Senteur + 1h de massage", duration: "120 min", price: "500DH" },
     ],
   },
   {
     category: "Rituels",
     items: [
-      { name: "Rituel Argan Visage", duration: "60 min", price: "75€" },
-      { name: "Rituel Corps Complet", duration: "90 min", price: "110€" },
-      { name: "Rituel Mariée", duration: "180 min", price: "250€" },
+      { name: "Rituel berbère", duration: "120 min", price: "350DH" },
+      { name: "Rituel Initiation orientale", duration: "120 min", price: "450DH" },
+      { name: "Rituel des Sens", duration: "120 min", price: "523DH" },
+      { name: "Rituel  Sensation", duration: "175 min", price: "713DH" },
+      { name: "Rituel Beauté", duration: "180 min", price: "810DH" },
+
     ],
   },
   {
-    category: "Soins Visage & Corps",
+    category: "Soins de beauté",
     items: [
-      { name: "Soin Visage Argan", duration: "45 min", price: "65€" },
-      { name: "Soin Corps Hydratant", duration: "60 min", price: "75€" },
-      { name: "Soin Complet Luxe", duration: "120 min", price: "150€" },
+      { name: "Manucure", duration: "45 min", price: "150DH" },
+      { name: "Soin Corps Hydratant", duration: "60 min", price: "350DH" },
+      { name: "Pédicure", duration: "45 min", price: "150DH" },
+      { name: "Épilation", duration: "VENTRE", price: "150DH" },
     ],
   },
 ]
@@ -77,8 +83,8 @@ export default function Services() {
         </div>
 
         <div className="flex justify-center mt-8 md:mt-12 px-4">
-          <Link href="/booking" className="w-full sm:w-auto">
-            <Button className="bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-2 md:py-3 text-base md:text-lg font-semibold w-full sm:w-auto">
+          <Link href="#booking" className="w-full sm:w-auto">
+            <Button   className="bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-2 md:py-3 text-base md:text-lg font-semibold w-full sm:w-auto">
               Réserver Maintenant
             </Button>
           </Link>

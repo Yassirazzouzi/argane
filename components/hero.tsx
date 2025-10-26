@@ -1,4 +1,6 @@
-import { Button } from "@/components/ui/button"
+"use client";
+
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -16,10 +18,16 @@ export default function Hero() {
               naturels d'exception vous transportent vers une oasis de détente.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground w-full sm:w-auto">
+              <Button  onClick={() =>
+                  document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
+                } size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground w-full sm:w-auto">
                 Découvrir nos soins
               </Button>
+
               <Button
+                onClick={() =>
+                  document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" })
+                }
                 size="lg"
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary/10 bg-transparent w-full sm:w-auto"
@@ -40,5 +48,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
