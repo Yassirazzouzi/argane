@@ -4,6 +4,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
+            <div className="flex items-start gap-2">
+              <img
+                src="/spa9.png"
+                alt="Logo Argan Palace"
+                className="w-90 h-50  object-contain"
+              />
+            
+          </div>
             <h4 className="font-serif text-xl font-bold mb-4"></h4>
             <p className="text-background/80 text-sm leading-relaxed">
               Votre destination de bien-être marocain authentique depuis 2009.

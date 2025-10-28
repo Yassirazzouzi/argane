@@ -1,3 +1,4 @@
+
 "use client"
 
 import { useState } from "react"
@@ -19,11 +20,17 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 md:h-16">
-          <div className="flex items-center">
-            <h1 className="font-serif text-lg md:text-2xl font-bold text-primary">NaturaGlow</h1>
+         
+          <div className="flex items-start gap-2">
+              <img
+                src="/spa8.png"
+                alt="Logo Argan Palace"
+                className="w-50 h-20  object-contain"
+              />
+            
           </div>
 
-          {/* Navigation Desktop */}
+          {/* 🧭 Navigation Desktop */}
           <nav className="hidden md:flex gap-8">
             {navItems.map((item) => (
               <a
@@ -36,7 +43,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Boutons Desktop */}
+          {/* ☎️ Boutons Desktop */}
           <div className="hidden md:flex gap-4">
             <a href="tel:+212668325820">
               <Button variant="outline" size="sm" className="bg-transparent">
@@ -55,7 +62,7 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Menu Mobile */}
+          {/* 📱 Menu Mobile */}
           <button
             className="md:hidden text-2xl p-2 hover:bg-muted rounded-lg transition-colors"
             onClick={() => setIsOpen(!isOpen)}
@@ -64,7 +71,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Navigation Mobile */}
+        {/* 📜 Navigation Mobile */}
         {isOpen && (
           <nav className="md:hidden pb-4 space-y-2">
             {navItems.map((item) => (

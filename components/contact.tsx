@@ -27,9 +27,9 @@ export default function Contact() {
               <div>
                 <h4 className="font-semibold text-foreground mb-1 text-sm md:text-base">Téléphone</h4>
                 <p className="text-xs md:text-sm text-muted-foreground">
-                  +212 5 28 84 00 00
+                  
                   <br />
-                  +212 6 12 34 56 78
+                  +212 6 68 32 58 20
                 </p>
               </div>
             </div>
@@ -39,9 +39,9 @@ export default function Contact() {
               <div>
                 <h4 className="font-semibold text-foreground mb-1 text-sm md:text-base">Email</h4>
                 <p className="text-xs md:text-sm text-muted-foreground">
-                  info@arganpalace.ma
+                 boulaidmouloud71@gmail.com
                   <br />
-                  reservations@arganpalace.ma
+                 
                 </p>
               </div>
             </div>

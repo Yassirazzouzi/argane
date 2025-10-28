@@ -2,7 +2,7 @@ export default function Experience() {
   const images = [
     { src: "/spa-oils-argan-bottles-luxury.jpg", alt: "Huiles d'argan" },
     { src: "/moroccan-spa-flowers-rose-petals.jpg", alt: "Fleurs et pétales" },
-    { src: "/agadir1.jpg ", alt: "Serviettes zen" },
+    { src: "/a1.jpg ", alt: "Serviettes zen" },
     { src: "/hammam-steam-room-traditional-moroccan.jpg", alt: "Hammam traditionnel" },
     { src: "/agadir4.jpg", alt: "Lit de massage" },
     { src: "/agadir3.jpg", alt: "Thé à la menthe" },

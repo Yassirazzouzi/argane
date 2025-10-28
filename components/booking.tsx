@@ -25,10 +25,51 @@ export default function Booking() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setShowPayment(true)
+
+
+
+
+
+
+  
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+
+  const selectedServiceData = PRODUCTS.find((p) => p.id === formData.service)
+  const bookingData = { ...formData, serviceName: selectedServiceData?.name }
+
+  try {
+    // 📤 Envoi vers l’API Next.js
+    await fetch("/api/saveBooking", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(bookingData),
+    })
+  } catch (error) {
+    console.error("Erreur lors de l'enregistrement Excel :", error)
   }
+
+  setShowPayment(true)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   const handlePaymentSuccess = () => {
     alert("Reservation confirmé ! Votre réservation est enregistrée.")

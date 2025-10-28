@@ -14,7 +14,7 @@ const galleryImages = [
   { id: 1, title: "Salle de Massage Relaxante", image: "/gallery-massage.jpg" },
   { id: 2, title: "Hammam Traditionnel", image: "/agadir5.jpg" },
   { id: 3, title: "Rituel Argan Premium", image: "/gallery-argan.jpg" },
-  { id: 4, title: "Soin du Visage Luxe", image: "/gallery-facial.jpg" },
+  { id: 4, title: "Soin du Visage Luxe", image: "/a1.jpg" },
   { id: 5, title: "Espace Détente", image: "/gallery-relaxation.jpg" },
   { id: 6, title: "Piscine Chauffée", image: "/gallery-pool.jpg" },
   { id: 7, title: "Agadir 1", image: "/agadir1.jpg" },
